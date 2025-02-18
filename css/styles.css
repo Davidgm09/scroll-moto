@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, 'Akira', 'Consolas', sans-serif;
+    background: #f5f5f5;
+    color: #222;
+  }
+
+  @font-face {
+  font-family: 'Akira';
+  src: url('../fonts/Akira.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  }
+  @font-face {
+  font-family: 'Consolas';
+  src: url('../fonts/Consolas.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+  /* Imagen de fondo fija */
+  img.background {
+    width: 100vw;
+    height: 100dvh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  main {
+    height: 300dvh;
+  }
+
+  header {
+    background: linear-gradient(40deg, #ba3816, #a41705 40%);
+    width: 550px;
+    height: 550px;
+    border-radius: 1000px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    margin-top: -380px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    animation: slideInDown 800ms ease-out;
+  }
+
+  header img {
+      width: 350px;
+      height: auto;
+      margin-bottom: 85px;
+  }
+
+  
+
+  @keyframes slideInDown {
+    from {
+      transform: translate3d(-50%, -100%, 0);
+      opacity: 0;
+    }
+    to {
+      transform: translate3d(-50%, 0, 0);
+      opacity: 1;
+    }
+  }
+
+  /* SECCIÓN FINAL TRANSPARENTE */
+  .final-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    position: relative;
+    min-height: 100vh;
+    margin-left: 80px;
+  }
+
+  .final-section svg{
+      margin-top: 20px;
+      margin-right: 5px;
+      
+  }
+
+  .final-section img {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+    position: static;
+  }
+
+  .final-text {
+    width: 45%;
+    position: relative;
+    margin-top: 150px;
+  }
+
+  .final-text h2 {
+      font-size: 28px;
+      font-weight: bold;
+      width: 70%;
+      font-family: 'Akira';
+      margin-top: 100px; /* Margen inicial */
+      }
+
+  /* Cuando la sección final se haga visible */
+
+
+  .final-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+
+  .dots {
+      grid-column-gap: 2.5rem;
+      grid-row-gap: 2.5rem;
+      grid-template-rows: auto auto;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-columns: 1fr;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      display: grid;
+  }
+
+  .dots img{
+      max-width: 100%;
+      display: inline-block;
+      width: 250px;
+  }
+
+  .dots p{
+      font-family: 'Consolas';
+  }
+
+  .show-final {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
