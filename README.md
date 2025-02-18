@@ -7,3 +7,5 @@ Un proyecto interactivo que combina animaciones fluidas y una experiencia visual
 ✅ GitHub Pages para despliegue
 
 🔗 ¡Visualízalo aquí! → https://davidgm09.github.io/scroll-moto/
+![image](https://github.com/user-attachments/assets/6d1fc646-0f13-4204-99d4-d4b9e165499e)
+
